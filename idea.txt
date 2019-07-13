@@ -1,0 +1,75 @@
+string = "abcbd"
+
+finalArray= []
+
+delimiter = "bc"
+
+stringResult= ""
+
+Para cada caracter en string :
+  si caracter !== delimiter[0]   //No esta en delimiter
+      stringResult += caracter
+  else   
+     si nextCaracter === delimiter[1]
+       poner stringResult en finalArray
+
+       poner indiceCaracter += lent
+     
+
+-----------------------------------------------------------------------------
+
+funcion que devuelve las posiciones donde estan los limitadores  indicesDelimitador
+
+función que devuelve substring  obtenerSubstring(string,indiceDelimitador, anteriorIndicedelimitador)
+'' inica que no hay indice anterior
+
+
+indiceCaracter =0
+anteriorIndicedelimitador = '';
+indicesLimitadores= obtenerPosicionesDelimitador(string,delimitador)
+
+posIndiceDelimitador = 0
+para cada posIndiceDelimitador , con posIndiceDelimitador< longitud indicesLimitadores
+   indiceDelimitador = indicesLimitadores[posIndiceDelimitador]
+   substring = obtenerSubstring(string,indiceDelimitador, anteriorIndicedelimitador)
+
+   poner substring en array string
+   anteriorIndicedelimitador = indiceDelimitador
+
+si  (indiceDelimitador + longitudDelimitador) <= logitud string
+    obtener subString final 
+    poner substring en array string
+
+
+-----------------------------------------------------------------------------
+
+funcion isDelimiter(posibleIndiceValido, string , delimiter)
+
+indiceString = posibleIndiceValido
+
+indiceDelimitador = 0
+result = false
+
+mientras string[indiceString] === delimitador [indiceDelimitador]
+   indiceString++;
+   indiceDelimitador++;
+   if indiceDelimitador < delimiter.lenght
+      break;
+
+  
+    
+
+    
+
+getIndexesDelimiterInString
+resultado = []
+
+ para cada posicion i del string
+      posibleIndiceValido = i
+      si isDelimiter(posibleIndiceValido, string , delimiter) 
+        poner posibleIndiceValido en resultado
+        i+= delimiter.lenght
+      else 
+        i++;
+
+
